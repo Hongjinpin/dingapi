@@ -1,0 +1,7 @@
+*.py[cod]
+.idea
+.DS_Store
+__pycache__
+apitest.py
+*.egg-info
+dist
