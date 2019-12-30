@@ -2,8 +2,7 @@ import logging
 
 import requests
 
-from dingapi.apis import DingUser
-from dingapi.apis.message import DingMessage
+from dingapi.apis import DingUser, DingMessage, DingDepartment
 from dingapi.cache import MemoryCache
 from dingapi.exception import DingRequestError
 
@@ -100,9 +99,9 @@ class DingApi:
     def general_apis(self):
         self.user = DingUser(self)
         self.message = DingMessage(self)
+        self.department = DingDepartment(self)
 
         self.extra_apis()
 
     def extra_apis(self):
         pass
-
