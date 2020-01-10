@@ -2,7 +2,7 @@ import logging
 
 import requests
 
-from dingapi.apis import DingUser, DingMessage, DingDepartment
+from dingapi.apis import DingUser, DingMessage, DingDepartment, DingMedia
 from dingapi.cache import MemoryCache
 from dingapi.exception import DingRequestError
 
@@ -100,6 +100,7 @@ class DingApi:
         self.user = DingUser(self)
         self.message = DingMessage(self)
         self.department = DingDepartment(self)
+        self.media = DingMedia(self)
 
         self.extra_apis()
 

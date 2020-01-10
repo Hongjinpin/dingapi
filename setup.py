@@ -8,7 +8,7 @@ with open('requirements.txt', "r", encoding='utf8') as f:
 
 setup(
     name="dingapi",
-    version="0.0.5",
+    version="0.0.6",
     keywords='dingding, ding, dtalk, dingtalk, sdk, api',
     author="hongjinpin",
     author_email="hongjinpin@qq.com",
